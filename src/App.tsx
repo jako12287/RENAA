@@ -2,7 +2,7 @@ const App = () => {
 
   return (
     <h1>
-      RENNA ssaaa
+      RENNA pagina final 
     </h1>
   )
 }
