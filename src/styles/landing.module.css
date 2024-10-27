@@ -1,0 +1,136 @@
+.sectionHeader {
+  padding-top: 2rem;
+}
+
+.sectionHeader img {
+  width: 313px;
+  height: 70px;
+}
+
+.sectionHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Lilita";
+  font-size: var(--size-title1);
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.containerHero {
+  display: flex;
+  justify-content: center;
+}
+
+.spaceOne {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.imageDog {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.spaceTwo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 10rem 0 10rem;
+  gap: 5rem;
+}
+
+.titleSpaceTwo {
+  font-size: var(--size-text1);
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+}
+
+.subTitleSpaceTwo,
+.callToActionSpaceTwo {
+  font-size: var(--size-text1);
+  font-weight: 400;
+}
+.callToActionSpaceTwo {
+  color: var(--green-color);
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.callToActionSpaceTwo:hover {
+  text-decoration: underline;
+  color: var(--green-color-hover);
+}
+
+.whatIs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.textTitle {
+  font-size: var(--size-text1);
+}
+
+.imageText {
+  width: 126px;
+  height: 28px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.marginZero {
+  margin: 0;
+}
+
+.marginLeftZero {
+  margin-left: 0;
+}
+
+.imageMap {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.spaceOneMap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-right: 13rem;
+}
+
+.spaceTwoMap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleWhatsIS {
+  font-size: var(--size-text1);
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.containerWhatsIS {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+.subtitleMap{
+  text-align: center;
+  font-family: "lilita";
+  font-size: var(--size-title2);
+}

@@ -2,6 +2,7 @@
   --white-color: #fff;
   --blue-color: #22415B;
   --green-color: #08945E;
+  --green-color-hover: #10DB8D;
   --error-color: #b8001f;
 
   --size-title1: 64px;
@@ -77,3 +78,4 @@ body {
 a {
   text-decoration: none;
 }
+
