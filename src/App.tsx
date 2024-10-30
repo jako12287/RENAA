@@ -7,9 +7,13 @@ const App = () => {
   return (
     <main>
       <section className={styles.sectionHeader}>
-        <figcaption>
-          <img className={styles.imageLogo} src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
-        </figcaption>
+        <div className={styles.containerLogo}>
+          <img
+            className={styles.imageLogo}
+            src={Logo}
+            alt="Logo del Registro Nacional Adopcion Animal"
+          />
+        </div>
       </section>
 
       <section className={styles.sectionHero}>
@@ -74,7 +78,7 @@ const App = () => {
           </div>
         </div>
 
-        <h3 className={styles.subtitleMap}>
+        <h3 className={styles.title}>
           Nuestra misión es proteger a los animales y asegurar adopciones
           responsables
         </h3>
@@ -95,19 +99,20 @@ const App = () => {
           />
         </div>
         <div className={styles.containerForm}>
-
-        <Form />
+          <Form />
         </div>
-        
       </section>
 
       <section className={styles.footer}>
-        
+        <div className={styles.containerLogo}>
+          <img
+            className={styles.imageLogo}
+            src={Logo}
+            alt="Logo del Registro Nacional Adopcion Animal"
+          />
+        </div>
 
-          <img className={styles.imageLogo} src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
-        
-
-        <h5>
+        <h5 className={styles.textFooter}>
           Diseñado y desarrollado por{" "}
           <a href="https://www.jcmaker.com" target="_blank" rel="nofollow">
             JCMaker

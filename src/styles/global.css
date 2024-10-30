@@ -1,29 +1,27 @@
 :root {
   --white-color: #fff;
-  --blue-color: #22415B;
-  --green-color: #08945E;
-  --green-color-hover: #10DB8D;
+  --blue-color: #22415b;
+  --green-color: #08945e;
+  --green-color-hover: #10db8d;
   --error-color: #b8001f;
-
   --size-title1: 64px;
   --size-title2: 40px;
   --size-text1: 36px;
+  --size-text2: 32px;
+  --size-text2-5: 25px;
+  --size-text3: 20px;
   --size-text-label: 16px;
   --size-text-label2: 14px;
 
   font-family: Poppins;
   line-height: 1.5;
   font-weight: 400;
-
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-
   background-color: var(--white-color);
   color: var(--blue-color);
   user-select: none;
- 
 }
 
 /* Poppins Regular */
@@ -72,10 +70,20 @@ html {
 }
 
 body {
+  width: 100%;
   max-width: 1728px;
+}
+main{
+  width: 100%;
 }
 
 a {
   text-decoration: none;
+  color: var(--green-color);
 }
 
+@media (max-width: 2388px) {
+  body {
+    padding: 1rem;
+  }
+}

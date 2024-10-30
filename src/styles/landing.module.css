@@ -1,10 +1,17 @@
 .sectionHeader {
   padding-top: 2rem;
+  width: 100%;
+}
+
+.containerLogo {
+  max-width: 314px;
+  max-height: 70px;
 }
 
 .imageLogo {
-  width: 313px;
-  height: 70px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .sectionHero {
@@ -17,7 +24,7 @@
   font-family: "Lilita";
   font-size: var(--size-title1);
   text-align: center;
-  margin: 2rem 0 3rem 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .containerHero {
@@ -30,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  max-width: 700px;
 }
 
 .imageDog {
@@ -67,18 +74,11 @@
   transition: color 0.4s linear;
 }
 
-.callToActionSpaceTwo:hover {
-  transition: text-shadow 0.2s linear;
-  transition: color 0.4s linear;
-  color: var(--green-color-hover);
-  text-shadow: 0px 2px 4px var(--blue-color);
-}
-
 .whatIs {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin: 4rem 0 4rem 0;
 }
 
 .textTitle {
@@ -101,7 +101,7 @@
 }
 
 .imageMap {
-  width: 60%;
+  width: 80%;
   height: auto;
   object-fit: cover;
 }
@@ -118,6 +118,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 700px;
 }
 
 .titleWhatsIS {
@@ -132,11 +133,6 @@
   margin-top: 3rem;
 }
 
-.subtitleMap {
-  text-align: center;
-  font-family: "lilita";
-  font-size: var(--size-title2);
-}
 .containerSetionForm {
   display: flex;
   flex-direction: column;
@@ -151,9 +147,8 @@
 
 .subTitleForm {
   font-size: var(--size-text1);
-  margin-bottom: 1rem;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
   padding: 0 40rem 0 40rem;
   line-height: 60px;
 }
@@ -168,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin: 8rem 0 8rem 0;
 }
 
 .footer {
@@ -178,4 +173,165 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+
+.textFooter {
+  font-size: var(--size-text-label2);
+  font-weight: 400;
+}
+
+@media (max-width: 2291px) {
+  .containerHero {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1712px) {
+  .subTitleForm {
+    padding: 0 30rem 0 30rem;
+  }
+}
+
+@media (max-width: 1392px) {
+  .subTitleForm {
+    padding: 0 10rem 0 10rem;
+  }
+}
+
+@media (max-width: 1448px) {
+  .spaceTwo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 6rem 0 6rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1358px) {
+  .spaceOneMap {
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 1206px) {
+  .spaceTwo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    gap: 2rem;
+  }
+  .titleSpaceTwo {
+    font-size: var(--size-text2);
+  }
+  .subTitleSpaceTwo,
+  .callToActionSpaceTwo {
+    font-size: var(--size-text2);
+  }
+}
+
+@media (max-width: 1112px) {
+  .spaceTwo {
+    padding: 0 3rem 0 3rem;
+    gap: 1rem;
+  }
+  .titleSpaceTwo {
+    font-size: var(--size-text2-5);
+    line-height: 50px;
+  }
+  .subTitleSpaceTwo,
+  .callToActionSpaceTwo {
+    font-size: var(--size-text2-5);
+  }
+
+  .titleWhatsIS,
+  .titleForm,
+  .subTitleForm {
+    font-size: var(--size-text2-5);
+  }
+}
+
+@media (max-width: 897px) {
+  .spaceTwo {
+    padding: 0 2rem 0 2rem;
+  }
+  .titleSpaceTwo {
+    font-size: var(--size-text3);
+    line-height: 35px;
+  }
+  .subTitleSpaceTwo,
+  .callToActionSpaceTwo {
+    font-size: var(--size-text3);
+  }
+  .titleWhatsIS,
+  .titleForm,
+  .subTitleForm {
+    font-size: var(--size-text3);
+
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 725px) {
+  .containerLogo {
+    max-width: 250px;
+    max-height: 56px;
+  }
+
+  .title {
+    font-size: var(--size-title2);
+  }
+  .spaceTwo {
+    padding: 0 1rem 0 1rem;
+  }
+  .titleWhatsIS {
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 625px) {
+  .subTitleForm {
+    padding: 0;
+  }
+}
+
+@media (max-width: 577px) {
+  .containerHero {
+    flex-direction: column;
+  }
+
+  .spaceTwo {
+    padding: 0;
+  }
+
+  .containerWhatsIS {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 471px) {
+  .containerLogo {
+    max-width: 200px;
+    max-height: 45px;
+  }
+
+  .title {
+    font-size: var(--size-text2);
+  }
+}
+
+@media (max-width: 380px) {
+  .containerLogo {
+    max-width: 150px;
+    max-height: 33px;
+  }
+
+  .title {
+    font-size: var(--size-text3);
+    font-family: "Poppins";
+  }
 }
