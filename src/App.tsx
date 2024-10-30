@@ -8,7 +8,7 @@ const App = () => {
     <main>
       <section className={styles.sectionHeader}>
         <figcaption>
-          <img src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
+          <img className={styles.imageLogo} src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
         </figcaption>
       </section>
 
@@ -98,13 +98,14 @@ const App = () => {
 
         <Form />
         </div>
-        <h3>Registra tu interés</h3>
+        
       </section>
 
-      <section>
-        <figcaption>
-          <img src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
-        </figcaption>
+      <section className={styles.footer}>
+        
+
+          <img className={styles.imageLogo} src={Logo} alt="Logo del Registro Nacional Adopcion Animal" />
+        
 
         <h5>
           Diseñado y desarrollado por{" "}

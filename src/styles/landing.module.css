@@ -2,7 +2,7 @@
   padding-top: 2rem;
 }
 
-.sectionHeader img {
+.imageLogo {
   width: 313px;
   height: 70px;
 }
@@ -132,25 +132,24 @@
   margin-top: 3rem;
 }
 
-
-.subtitleMap{
+.subtitleMap {
   text-align: center;
   font-family: "lilita";
   font-size: var(--size-title2);
 }
-.containerSetionForm{
+.containerSetionForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.titleForm{
+.titleForm {
   font-size: var(--size-text1);
   margin-bottom: 1rem;
   text-align: center;
   margin-top: 4rem;
 }
 
-.subTitleForm{
+.subTitleForm {
   font-size: var(--size-text1);
   margin-bottom: 1rem;
   text-align: center;
@@ -159,17 +158,24 @@
   line-height: 60px;
 }
 
-
-.containerImageForm{
+.containerImageForm {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.containerForm{
-  border: 1px solid red;
+.containerForm {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+
+.footer {
+  margin: 3rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
