@@ -6,6 +6,8 @@ import * as yup from "yup";
 import { PropsForm } from "../types";
 import { PostEmail } from "../services/configApi";
 import { forwardRef } from "react";
+import ToastNotify from "./ToastNotify";
+import { messagePost, messagePostError } from "../utils";
 
 const schema = yup.object().shape({
   name: yup.string().required("El nombre es obligatorio"),
@@ -19,6 +21,7 @@ const Form = forwardRef<HTMLFormElement>((_, ref) => {
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ mode: "onChange", resolver: yupResolver(schema) });
 
@@ -35,8 +38,12 @@ const Form = forwardRef<HTMLFormElement>((_, ref) => {
     try {
       const response = await PostEmail(dataSend);
       console.log("Email enviado con éxito", response);
+      ToastNotify(messagePost);
+      reset();
+      setSeleted(false);
     } catch (error) {
       console.log("Error al enviar el email", error);
+      ToastNotify(messagePostError);
     } finally {
       setIsLoading(false);
     }

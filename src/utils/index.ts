@@ -8,3 +8,10 @@ export const getVerifyStatusServer = async () => {
     console.error("Error al obtener estado del servidor", { error });
   }
 };
+
+export const messagePostError = `
+¡Ups! Algo salió mal.
+No pudimos procesar tus datos en este momento. Por favor, intenta nuevamente más tarde.
+`;
+export const messagePost = `¡Gracias por tu interés!
+Hemos recibido tus datos correctamente.`;
