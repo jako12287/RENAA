@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  position: relative;
 }
 
 .containerInputs {
@@ -53,6 +54,12 @@
 
 .subText {
   font-family: "Poppins";
+  font-size: var(--size-text-label2);
+}
+
+.textError{
+  color: var(--error-color);
+  margin-top: 0.5rem;
   font-size: var(--size-text-label2);
 }
 

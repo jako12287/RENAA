@@ -1,6 +1,8 @@
 :root {
   --white-color: #fff;
+  --white-color-bg: #dcdcdc;
   --blue-color: #22415b;
+  --blue-color-shadows: #22415b50;
   --green-color: #08945e;
   --green-color-hover: #10db8d;
   --error-color: #b8001f;

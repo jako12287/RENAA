@@ -1,0 +1,18 @@
+.containerAll {
+  border: 1px solid green;
+  background-color: var(--blue-color-shadows);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.container {
+  border: 1px solid red;
+  width: 80vw;
+  height: auto;
+  max-height: 80vh;
+  background-color: var(--white-color);
+}
