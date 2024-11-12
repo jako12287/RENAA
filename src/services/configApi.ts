@@ -12,3 +12,25 @@ export const PostEmail = async (dataPost: PropsForm) => {
     console.log(error);
   }
 };
+
+import { NameRoutes } from "../types";
+
+export const getFetch = async (uri: NameRoutes) => {
+  try {
+    const response = await fetch(`https://naturalapi.onrender.com/${uri}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Error al realizar la petición");
+    }
+
+    return response.json();
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+};

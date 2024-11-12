@@ -3,7 +3,28 @@ import Logo from "./assets/images/logo.png";
 import Hero from "./assets/images/imageHero.png";
 import Map from "./assets/images/mapa.png";
 import Form from "./components/Form";
+import { useEffect, useRef } from "react";
+import { getVerifyStatusServer } from "./utils";
 const App = () => {
+  const TopScroll = useRef<HTMLElement | null>(null);
+  const section4Ref = useRef<HTMLFormElement | null>(null);
+
+  const scrollToForm = () => {
+    if (section4Ref?.current) {
+      section4Ref?.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    if (TopScroll?.current) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
+
+  useEffect(() => {
+    getVerifyStatusServer();
+  }, []);
+
   return (
     <main>
       <section className={styles.sectionHeader}>
@@ -36,7 +57,9 @@ const App = () => {
               conecten, registren adoptantes y aseguren adopciones responsables
             </h2>
             <h3 className={styles.subTitleSpaceTwo}>¿Te interesa? </h3>
-            <h3 className={styles.callToActionSpaceTwo}>Registra tu interés</h3>
+            <h3 className={styles.callToActionSpaceTwo} onClick={scrollToForm}>
+              Registra tu interés
+            </h3>
           </div>
         </div>
       </section>
@@ -99,7 +122,7 @@ const App = () => {
           />
         </div>
         <div className={styles.containerForm}>
-          <Form />
+          <Form ref={section4Ref} />
         </div>
       </section>
 

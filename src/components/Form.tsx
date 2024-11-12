@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { PropsForm } from "../types";
 import { PostEmail } from "../services/configApi";
+import { forwardRef } from "react";
 
 const schema = yup.object().shape({
   name: yup.string().required("El nombre es obligatorio"),
@@ -14,7 +15,7 @@ const schema = yup.object().shape({
     .required("El email es obligatorio"),
 });
 
-const Form = () => {
+const Form = forwardRef<HTMLFormElement>((_, ref) => {
   const {
     control,
     handleSubmit,
@@ -23,8 +24,6 @@ const Form = () => {
 
   const [selected, setSeleted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
- 
 
   const onsubmit: SubmitHandler<PropsForm> = async (data) => {
     setIsLoading(true);
@@ -44,7 +43,11 @@ const Form = () => {
   };
 
   return (
-    <form className={styles.containerForm} onSubmit={handleSubmit(onsubmit)}>
+    <form
+      className={styles.containerForm}
+      onSubmit={handleSubmit(onsubmit)}
+      ref={ref}
+    >
       <div className={styles.containerInputs}>
         <div className={styles.group}>
           <label className={styles.labelText} htmlFor="name">
@@ -106,6 +109,6 @@ const Form = () => {
       </button>
     </form>
   );
-};
+});
 
 export default Form;
